@@ -1,15 +1,37 @@
 .callout {
-	
+  max-width: 600px;
+  margin: 30px auto;
+  border: 1px solid #000080;
+  padding: 20px;
+  background-color: #bcd2ee;
+  color: #000033;
+  font-family: Georgia, "Times New Roman", Times, serif;
+
 }
 
 .callout img {
-	
+  float: right;
+  width: 150px;
+  height: auto;
+  background-color: white;
+  padding: 5px;
+  border: 1px solid #000080;
+  margin: 0 0 10px 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
 blockquote {
-	
+  margin: 0 0 15px 0;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 cite {
-	
+  display: block;
+  border-top: 1px solid #000080;
+  padding-top: 10px;
+  text-align: right;
+  font-size: 0.9em;
+  color: #000033;
 }

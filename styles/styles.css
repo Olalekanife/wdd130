@@ -93,3 +93,80 @@ footer {
   font-size: 0.9rem;
   color: #000;
 }
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+header nav {
+    background-color: #006eb6;
+    padding: 0.5rem;
+}
+
+header nav a {
+    color: #fff;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+/* Main content */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.profile-img {
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Box Class Section */
+ /* Class Selectors */
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #333;
+    background-color: #eee;
+    color: #111;
+}
+
+/* Temples List */
+ul.box li {
+    margin-bottom: 0.5rem;
+}
+
+/* Aside */
+aside {
+    position: relative; /* required for overlay */
+}
+
+/* Overlay heading on aside image */
+.overlay-heading {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 110, 182, 0.8);
+    color: #fff;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    margin-top: 2rem;
+    border-top: 1px solid #333;
+    padding: 0.5rem;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}

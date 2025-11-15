@@ -1,3 +1,20 @@
+:root {
+  --primary-color: #006eb6;
+  --secondary-color: #ddd;
+  --accent-color: #efefaa;
+
+  --text-dark: #333;
+  --text-light: #fff;
+
+  --border-color: rgba(0, 0, 0, 0.1);
+
+  --radius: 20px;
+  --spacing: 1rem;
+
+  --font-main: Arial, Helvetica, sans-serif;
+  --shadow-soft: 0 0 30px #777;
+}
+
 /* Style the navigation bar */
 nav {
   background-color: darkblue;

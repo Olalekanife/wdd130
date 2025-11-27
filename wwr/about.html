@@ -7,7 +7,6 @@
 
     <title>White Water Rafting | About Us</title>
 
-    <!-- Required Meta Tags -->
     <meta name="description"
         content="Experience thrilling white water rafting adventures with our expert guides. Safe, exciting, and unforgettable outdoor experiences for all skill levels.">
     <meta name="author" content="Ifeoluwa Olalekan">
@@ -16,10 +15,12 @@
 </head>
 
 <body>
-    <header>
-        <img src="images/logo.png" alt="Rafting Company Logo">
 
-        <nav>
+    <!-- HEADER -->
+    <header class="header-grid">
+        <img src="images/logo.png" alt="Rafting Company Logo" class="logo">
+
+        <nav class="top-nav">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
@@ -28,6 +29,7 @@
     </header>
 
     <main>
+
         <!-- HERO SECTION -->
         <div class="hero">
             <img src="images/hero.jpg" alt="Rafting Adventure">
@@ -43,25 +45,59 @@
             </article>
         </div>
 
-        <!-- SECTION 1: HISTORY -->
-        <section>
+        <!-- HISTORY SECTION -->
+        <section class="history">
             <h2>History</h2>
-            <p>
-                Founded many years ago, our company has grown from a small river team into a trusted leader in outdoor
-                adventure experiences.
-            </p>
+            <div class="history-layout">
+                <p>
+                    Founded many years ago, our company has grown from a small river team into a trusted leader in
+                    outdoor adventure experiences.
+                </p>
+                <img src="images/history.jpg" alt="Rafting History Photo">
+            </div>
         </section>
 
-        <!-- SECTION 2: ADVENTURE -->
-        <section>
+        <!-- ADVENTURES GALLERY -->
+        <section class="adventures">
             <h2>Adventure Awaits You!</h2>
+
+            <div class="adventure-grid">
+
+                <figure>
+                    <img src="images/los-dientes.jpg" alt="Los Dientes del Diablo">
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/big-mallard.jpg" alt="Big Mallard">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/half-day.jpg" alt="Half Day Adventure">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/whitewater.jpg" alt="Whitewater Rapids">
+                    <figcaption>Whitewater Rapids</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/rapids-king.jpg" alt="Rapids King">
+                    <figcaption>Rapids King</figcaption>
+                </figure>
+
+            </div>
         </section>
+
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <p>&copy; 2025 White Water Rafting Co. | Ifeoluwa Olalekan</p>
 
-        <nav class="socialmedia">
+        <nav class="socialmedia social-right">
             <a href="https://facebook.com">
                 <img src="images/facebook.png" alt="Facebook">
             </a>

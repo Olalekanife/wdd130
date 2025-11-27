@@ -27,21 +27,36 @@ header, main, footer {
     margin: 0 auto;
 }
 
-/* HEADINGS */
-h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+/* HEADER GRID LAYOUT */
+.header-grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    padding: 1rem 0;
 }
 
-/* BASIC SPACING */
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
+.logo {
+    width: 180px;
 }
 
-/* NAV LINKS */
-nav a {
-    margin-right: 10px;
+/* NAV FLEX */
+.top-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.top-nav a {
+    text-decoration: none;
+    padding: 10px 16px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.top-nav a:hover {
+    background-color: #062a63;
 }
 
 /* HERO SECTION */
@@ -55,7 +70,7 @@ nav a {
     height: auto;
 }
 
-/* HERO HEADING OVERLAY */
+/* HERO TEXT OVERLAY */
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -67,7 +82,6 @@ nav a {
     color: #fff;
 }
 
-/* ARTICLE OVERLAY */
 .hero article {
     position: absolute;
     bottom: 20px;
@@ -76,17 +90,66 @@ nav a {
     width: 60%;
 }
 
-/* ARTICLE IMAGE FLOAT */
 .hero article img {
     float: right;
     width: 125px;
     margin-left: 10px;
 }
 
-/* FOOTER SOCIAL MEDIA */
-.socialmedia a {
-    text-decoration: none;
-    margin-right: 10px;
+/* HISTORY SECTION */
+.history {
+    margin-top: 2rem;
+}
+
+.history-layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 1rem;
+    align-items: center;
+}
+
+.history-layout img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* ADVENTURE GALLERY */
+.adventures {
+    margin-top: 2rem;
+}
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.adventure-grid figure {
+    text-align: center;
+}
+
+.adventure-grid img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.adventure-grid figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 2rem;
+    padding: 1rem 0;
+}
+
+/* SOCIAL ICONS RIGHT */
+.social-right {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
 .socialmedia img {

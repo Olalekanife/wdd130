@@ -2,27 +2,25 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About Us - Whitewater Rafting</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- REQUIRED: meta description (50-160 chars) -->
+    <title>White Water Rafting | About Us</title>
+
+    <!-- REQUIRED META TAGS -->
     <meta name="description"
-        content="Whitewater Rafting Co. — thrilling guided rafting trips with expert guides and unforgettable river adventures." />
+        content="Learn about White Water Rafting Co., our mission, history, and thrilling outdoor adventures that bring excitement and unforgettable memories.">
+    <meta name="author" content="Ifeoluwa Olalekan">
 
-    <!-- REQUIRED: meta author (student name) -->
-    <meta name="author" content="Ifeoluwa Olalekan" />
-
-    <link rel="stylesheet" href="styles/rafting.css" />
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
-    <!-- HEADER: contains exactly one nav -->
-    <header class="header-grid">
-        <img src="images/logo.png" alt="Rafting Logo" class="logo">
+    <header>
+        <img src="images/logo.png" alt="Rafting Company Logo">
 
-        <nav class="top-nav" aria-label="Main navigation">
+        <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
@@ -30,59 +28,58 @@
         </nav>
     </header>
 
-    <!-- HERO: kept outside main so main has exactly two sections -->
-    <section class="hero" aria-label="Hero">
-        <img src="images/hero.jpg" alt="Rafting Adventure">
-        <h1>About Whitewater Rafting Co.</h1>
-
-        <article>
-            <img src="images/happy-client.jpg" alt="Happy Client">
-            <p>
-                We create unforgettable whitewater rafting experiences with professional guides,
-                top-tier equipment, and breathtaking river routes.
-            </p>
-        </article>
-    </section>
-
-    <!-- MAIN: must contain exactly two sections -->
     <main>
 
-        <!-- 1) HISTORY SECTION: contains exactly h2 and one p (validator requirement) -->
-        <section class="history">
+        <!-- REQUIRED HERO DIV -->
+        <div class="hero">
+            <img src="images/hero.jpg" alt="Rafting Adventure">
+
+            <h1>White Water Rafting Co.</h1>
+
+            <article>
+                <img src="images/happy-client.jpg" alt="Happy Client">
+                <p>
+                    Our mission is to deliver unforgettable rafting adventures with safety, passion,
+                    and excitement at the core of every journey.
+                </p>
+            </article>
+        </div>
+
+        <!-- REQUIRED SECTION 1 -->
+        <section>
             <h2>History</h2>
             <p>
-                Established over 20 years ago, Whitewater Rafting Co. has safely guided thousands of guests through
-                exciting rivers,
-                combining safety, skill, and unforgettable adventure.
+                Founded decades ago, our company has grown from a small river crew into one of the
+                most trusted names in whitewater adventure tours.
             </p>
         </section>
 
-        <!-- 2) ADVENTURES SECTION: h2 must be "Adventure Awaits You!" exactly -->
-        <section class="adventures">
+        <!-- REQUIRED SECTION 2 -->
+        <section>
             <h2>Adventure Awaits You!</h2>
 
-            <div class="adventure-grid" role="list">
-                <figure role="listitem">
+            <div class="adventure-grid">
+                <figure>
                     <img src="images/adventure1.jpg" alt="Los Dientes del Diablo">
                     <figcaption>Los Dientes del Diablo</figcaption>
                 </figure>
 
-                <figure role="listitem">
+                <figure>
                     <img src="images/adventure2.jpg" alt="Big Mallard">
                     <figcaption>Big Mallard</figcaption>
                 </figure>
 
-                <figure role="listitem">
+                <figure>
                     <img src="images/adventure3.jpg" alt="Half Day Adventure">
                     <figcaption>Half Day Adventure</figcaption>
                 </figure>
 
-                <figure role="listitem">
+                <figure>
                     <img src="images/adventure4.jpg" alt="Rapid Canyon Run">
                     <figcaption>Rapid Canyon Run</figcaption>
                 </figure>
 
-                <figure role="listitem">
+                <figure>
                     <img src="images/adventure5.jpg" alt="Thunder Falls">
                     <figcaption>Thunder Falls</figcaption>
                 </figure>
@@ -91,18 +88,17 @@
 
     </main>
 
-    <!-- FOOTER: must include nav.socialmedia with exactly 3 links each containing an img -->
     <footer>
-        <p>©2025 Whitewater Rafting Co. | Created by Ifeoluwa Olalekan</p>
+        <p>&copy; 2025 White Water Rafting Co. | Ifeoluwa Olalekan</p>
 
-        <nav class="socialmedia" aria-label="Social media links">
-            <a href="https://facebook.com" aria-label="Facebook">
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
                 <img src="images/facebook.png" alt="Facebook">
             </a>
-            <a href="https://linkedin.com" aria-label="LinkedIn">
+            <a href="https://linkedin.com">
                 <img src="images/linkedin.png" alt="LinkedIn">
             </a>
-            <a href="https://instagram.com" aria-label="Instagram">
+            <a href="https://instagram.com">
                 <img src="images/instagram.png" alt="Instagram">
             </a>
         </nav>

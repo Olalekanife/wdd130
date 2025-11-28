@@ -1,245 +1,130 @@
-/* ===========================
-   ROOT VARIABLES
-=========================== */
-:root {
-  --primary-color: #0b3d91;
-  --accent1-color: #ffffff;
-  --accent2-color: #f4f4f4;
-  --heading-font: "Georgia", serif;
-  --body-font: "Arial", sans-serif;
-}
-
-/* ===========================
-   UNIVERSAL RESET (REQUIRED)
-=========================== */
+/* REQUIRED UNIVERSAL RESET */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* ===========================
-   BASE PAGE STYLES
-=========================== */
-html, body {
-  height: 100%;
+/* CSS VARIABLES */
+:root {
+    --primary-color: #0b3d91;
+    --accent1-color: #ffffff;
+    --accent2-color: #f4f4f4;
+
+    --heading-font: "Georgia", serif;
+    --body-font: "Arial", sans-serif;
 }
 
+/* BODY */
 body {
-  font-family: var(--body-font);
-  background-color: var(--accent2-color);
-  color: var(--primary-color);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
+    font-family: var(--body-font);
+    color: var(--primary-color);
 }
 
-/* Keep layout width consistent */
+/* PAGE WIDTH */
 header, main, footer {
-  width: 840px;
-  margin: 0 auto;
-  padding: 1rem;
+    width: 840px;
+    margin: 0 auto;
 }
 
-/* ===========================
-   HEADER: GRID (logo left, nav right)
-   NAV: FLEX (links horizontal)
-=========================== */
-.header-grid {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  align-items: center;
-  gap: 1rem;
-  background-color: var(--accent1-color);
-  border-bottom: 5px solid rgba(0,0,0,0.05);
-  padding-bottom: 1rem;
+/* HEADER LAYOUT */
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    align-items: center;
+    padding: 10px 0;
 }
 
-.logo {
-  width: 180px;
-  height: auto;
-  display: block;
+header img {
+    width: 120px;
 }
 
-/* top navigation uses flex */
-.top-nav {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 0.5rem;
-  align-items: center;
+/* NAVIGATION BAR */
+nav {
+    display: flex;
+    gap: 20px;
 }
 
-.top-nav a {
-  text-decoration: none;
-  padding: 10px 16px;
-  background-color: var(--primary-color);
-  color: var(--accent1-color);
-  border-radius: 6px;
-  font-weight: 700;
-  display: inline-block;
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
-.top-nav a:hover,
-.top-nav a:focus {
-  background-color: #062a63;
-  outline: none;
-}
-
-/* ===========================
-   HERO (outside main)
-=========================== */
+/* HERO SECTION */
 .hero {
-  position: relative;
-  margin-top: 1rem;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  background: var(--accent1-color);
+    position: relative;
+    margin-top: 20px;
 }
 
 .hero img {
-  width: 100%;
-  display: block;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .hero h1 {
-  position: absolute;
-  top: 20px;
-  left: 0;
-  right: 0;
-  background-color: rgba(11,61,145,0.85);
-  color: var(--accent1-color);
-  padding: 1rem;
-  text-align: center;
-  font-family: var(--heading-font);
-  font-size: 1.4rem;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: rgba(11, 61, 145, 0.8);
+    color: white;
+    font-family: var(--heading-font);
 }
 
 .hero article {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  width: clamp(220px, 40%, 360px);
-  background-color: rgba(255,255,255,0.95);
-  padding: 1rem;
-  border-radius: 6px;
+    position: absolute;
+    bottom: 20px;
+    background: rgba(255, 255, 255, 0.85);
+    width: 60%;
+    padding: 16px;
 }
 
 .hero article img {
-  float: right;
-  width: 130px;
-  margin-left: 10px;
-  border-radius: 4px;
+    float: right;
+    width: 120px;
+    margin-left: 10px;
 }
 
-/* ===========================
-   HISTORY SECTION (first section inside main)
-   Contains exactly h2 and one p
-=========================== */
-.history {
-  margin-top: 2rem;
-  background: var(--accent1-color);
-  padding: 1rem;
-  border-radius: 6px;
+/* HISTORY SECTION */
+section {
+    margin-top: 30px;
 }
 
-.history h2 {
-  font-family: var(--heading-font);
-  margin-bottom: 1rem;
-}
-
-/* Ensure the p text inside history is styled */
-.history p {
-  color: rgba(0,0,0,0.85);
-  line-height: 1.6;
-}
-
-/* ===========================
-   ADVENTURES SECTION (second section inside main)
-   h2 text must be "Adventure Awaits You!" exactly
-=========================== */
-.adventures {
-  margin-top: 2rem;
-}
-
-.adventures h2 {
-  text-align: center;
-  font-family: var(--heading-font);
-  margin-bottom: 1rem;
-}
-
-/* 5 across gallery */
+/* ADVENTURE GRID */
 .adventure-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
-}
-
-.adventure-grid figure {
-  background: var(--accent1-color);
-  padding: 0.5rem;
-  text-align: center;
-  border-radius: 6px;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 20px;
 }
 
 .adventure-grid img {
-  width: 100%;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 4px;
+    width: 100%;
+    height: auto;
 }
 
-.adventure-grid figcaption {
-  margin-top: 0.5rem;
-  font-weight: 700;
-  color: var(--primary-color);
+figure {
+    text-align: center;
 }
 
-/* ===========================
-   FOOTER: contains nav.socialmedia with exactly 3 anchors each containing an img
-=========================== */
+/* FOOTER */
 footer {
-  background: var(--accent1-color);
-  border-top: 1px solid rgba(0,0,0,0.06);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid var(--primary-color);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-footer p {
-  font-size: 0.95rem;
-}
-
-/* nav.socialmedia MUST exist inside footer and contain 3 anchors with images */
 .socialmedia {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-}
-
-.socialmedia a {
-  display: inline-block;
+    display: flex;
+    gap: 10px;
 }
 
 .socialmedia img {
-  width: 32px;
-  height: auto;
-  display: block;
-  border-radius: 4px;
-}
-
-/* ===========================
-   Responsive adjustments
-=========================== */
-@media (max-width: 900px) {
-  header, main, footer { width: 96%; }
-
-  .header-grid { grid-template-columns: 140px 1fr; gap: 0.5rem; }
-  .top-nav { flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
-  .hero article { position: static; width: auto; margin: 0.75rem; float: none; }
-  .hero h1 { position: static; opacity: 1; }
-  .history { padding: 0.75rem; }
-  .adventure-grid { grid-template-columns: repeat(2, 1fr); }
+    width: 32px;
 }

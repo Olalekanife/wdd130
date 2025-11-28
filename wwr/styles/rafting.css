@@ -8,9 +8,6 @@
 /* CSS VARIABLES */
 :root {
     --primary-color: #0b3d91;
-    --accent1-color: #ffffff;
-    --accent2-color: #f4f4f4;
-
     --heading-font: "Georgia", serif;
     --body-font: "Arial", sans-serif;
 }

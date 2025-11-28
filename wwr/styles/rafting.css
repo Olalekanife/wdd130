@@ -40,12 +40,12 @@ header img {
 }
 
 /* NAVIGATION BAR */
-nav {
+header nav {
     display: flex;
     gap: 20px;
 }
 
-nav a {
+header nav a {
     text-decoration: none;
     color: var(--primary-color);
     font-weight: bold;
@@ -73,12 +73,17 @@ nav a {
     font-family: var(--heading-font);
 }
 
+/* ARTICLE INSIDE HERO */
 .hero article {
     position: absolute;
     bottom: 20px;
     background: rgba(255, 255, 255, 0.85);
     width: 60%;
     padding: 16px;
+}
+
+.hero article h3 {
+    margin-bottom: 10px; /* Heading spacing */
 }
 
 .hero article img {
@@ -120,11 +125,12 @@ footer {
     align-items: center;
 }
 
-.socialmedia {
+/* SOCIAL MEDIA NAV IN FOOTER */
+footer nav.socialmedia {
     display: flex;
     gap: 10px;
 }
 
-.socialmedia img {
+footer nav.socialmedia a img {
     width: 32px;
 }

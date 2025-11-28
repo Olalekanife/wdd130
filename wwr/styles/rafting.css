@@ -1,57 +1,69 @@
-/* ROOT VARIABLES */
+/* ===========================
+   ROOT VARIABLES
+=========================== */
 :root {
     --primary-color: #0b3d91;
     --accent1-color: #ffffff;
     --accent2-color: #f4f4f4;
-
     --heading-font: "Georgia", serif;
     --body-font: "Arial", sans-serif;
 }
 
-/* RESET */
+/* ===========================
+   UNIVERSAL RESET
+=========================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BODY */
+/* ===========================
+   GENERAL BODY STYLING
+=========================== */
 body {
     font-family: var(--body-font);
+    background-color: var(--accent2-color);
     color: var(--primary-color);
+    line-height: 1.6;
 }
 
-/* LAYOUT WIDTH */
 header, main, footer {
     width: 840px;
     margin: 0 auto;
+    padding: 1rem;
 }
 
-/* HEADER GRID LAYOUT */
+/* ===========================
+   HEADER & NAV LAYOUT
+=========================== */
 .header-grid {
     display: grid;
     grid-template-columns: 200px 1fr;
     align-items: center;
-    padding: 1rem 0;
+    gap: 1rem;
+    background-color: var(--accent1-color);
+    border-bottom: 5px solid rgba(0,0,0,0.05);
+    padding-bottom: 1rem;
 }
 
 .logo {
     width: 180px;
+    height: auto;
 }
 
-/* NAV FLEX */
 .top-nav {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    gap: 0.5rem;
 }
 
 .top-nav a {
     text-decoration: none;
     padding: 10px 16px;
     background-color: var(--primary-color);
-    color: #fff;
-    border-radius: 5px;
+    color: var(--accent1-color);
+    border-radius: 6px;
     font-weight: bold;
 }
 
@@ -59,79 +71,105 @@ header, main, footer {
     background-color: #062a63;
 }
 
-/* HERO SECTION */
+/* ===========================
+   HERO SECTION
+=========================== */
 .hero {
     position: relative;
+    margin-top: 1rem;
 }
 
 .hero img {
-    display: block;
     width: 100%;
-    height: auto;
+    display: block;
 }
 
-/* HERO TEXT OVERLAY */
 .hero h1 {
     position: absolute;
     top: 20px;
-    width: 100%;
-    padding: 16px;
+    left: 0;
+    right: 0;
+    background-color: rgba(11,61,145,0.85);
+    color: var(--accent1-color);
+    padding: 1rem;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--primary-color);
-    color: #fff;
+    font-family: var(--heading-font);
 }
 
 .hero article {
     position: absolute;
     bottom: 20px;
-    background-color: rgba(255,255,255,0.8);
-    padding: 16px;
-    width: 60%;
+    left: 20px;
+    width: 340px;
+    background-color: rgba(255,255,255,0.95);
+    padding: 1rem;
+    border-radius: 6px;
 }
 
 .hero article img {
     float: right;
-    width: 125px;
+    width: 130px;
     margin-left: 10px;
+    border-radius: 4px;
 }
 
-/* HISTORY SECTION */
+/* ===========================
+   HISTORY SECTION
+=========================== */
 .history {
     margin-top: 2rem;
+    background-color: var(--accent1-color);
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.history h2 {
+    font-family: var(--heading-font);
+    margin-bottom: 1rem;
 }
 
 .history-layout {
     display: grid;
-    grid-template-columns: 1fr 300px;
+    grid-template-columns: 1fr 280px;
     gap: 1rem;
-    align-items: center;
 }
 
 .history-layout img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
-/* ADVENTURE GALLERY */
+/* ===========================
+   ADVENTURES GALLERY
+=========================== */
 .adventures {
     margin-top: 2rem;
+}
+
+.adventures h2 {
+    text-align: center;
+    font-family: var(--heading-font);
+    margin-bottom: 1rem;
 }
 
 .adventure-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
-    margin-top: 1rem;
 }
 
 .adventure-grid figure {
+    background-color: var(--accent1-color);
+    padding: 0.5rem;
     text-align: center;
+    border-radius: 6px;
 }
 
 .adventure-grid img {
     width: 100%;
-    border-radius: 5px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
 .adventure-grid figcaption {
@@ -139,19 +177,23 @@ header, main, footer {
     font-weight: bold;
 }
 
-/* FOOTER */
+/* ===========================
+   FOOTER
+=========================== */
 footer {
-    margin-top: 2rem;
-    padding: 1rem 0;
+    background-color: var(--accent1-color);
+    border-top: 1px solid rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* SOCIAL ICONS RIGHT */
 .social-right {
     display: flex;
-    justify-content: flex-end;
-    gap: 10px;
+    gap: 12px;
 }
 
-.socialmedia img {
+.socialmedia {
     width: 32px;
+    border-radius: 4px;
 }

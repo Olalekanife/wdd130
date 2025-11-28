@@ -21,11 +21,16 @@
 /* ===========================
    BASE PAGE STYLES
 =========================== */
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: var(--body-font);
   background-color: var(--accent2-color);
   color: var(--primary-color);
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Keep layout width consistent */
@@ -76,10 +81,11 @@ header, main, footer {
 .top-nav a:hover,
 .top-nav a:focus {
   background-color: #062a63;
+  outline: none;
 }
 
 /* ===========================
-   HERO (kept outside main per validator)
+   HERO (outside main)
 =========================== */
 .hero {
   position: relative;
@@ -106,6 +112,7 @@ header, main, footer {
   padding: 1rem;
   text-align: center;
   font-family: var(--heading-font);
+  font-size: 1.4rem;
 }
 
 .hero article {
@@ -127,6 +134,7 @@ header, main, footer {
 
 /* ===========================
    HISTORY SECTION (first section inside main)
+   Contains exactly h2 and one p
 =========================== */
 .history {
   margin-top: 2rem;
@@ -140,17 +148,10 @@ header, main, footer {
   margin-bottom: 1rem;
 }
 
-.history-layout {
-  display: grid;
-  grid-template-columns: 1fr 280px;
-  gap: 1rem;
-  align-items: center;
-}
-
-.history-layout img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
+/* Ensure the p text inside history is styled */
+.history p {
+  color: rgba(0,0,0,0.85);
+  line-height: 1.6;
 }
 
 /* ===========================
@@ -196,7 +197,7 @@ header, main, footer {
 }
 
 /* ===========================
-   FOOTER: contains nav.socialmedia with exactly 3 links each having an img
+   FOOTER: contains nav.socialmedia with exactly 3 anchors each containing an img
 =========================== */
 footer {
   background: var(--accent1-color);
@@ -211,7 +212,7 @@ footer p {
   font-size: 0.95rem;
 }
 
-/* nav.socialmedia MUST be present inside footer and contain 3 anchors with images */
+/* nav.socialmedia MUST exist inside footer and contain 3 anchors with images */
 .socialmedia {
   display: flex;
   gap: 12px;
@@ -239,6 +240,6 @@ footer p {
   .top-nav { flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
   .hero article { position: static; width: auto; margin: 0.75rem; float: none; }
   .hero h1 { position: static; opacity: 1; }
-  .history-layout { grid-template-columns: 1fr; }
+  .history { padding: 0.75rem; }
   .adventure-grid { grid-template-columns: repeat(2, 1fr); }
 }

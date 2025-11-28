@@ -2,48 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>About Us - Whitewater Rafting</title>
-    <link rel="stylesheet" href="styles/rafting.css">
+
+    <!-- REQUIRED: meta description (50-160 chars) -->
+    <meta name="description"
+        content="Whitewater Rafting Co. — thrilling guided rafting trips, experienced guides, and unforgettable adventures on epic rivers." />
+
+    <!-- REQUIRED: meta author (student name) -->
+    <meta name="author" content="Ifeoluwa Olalekan" />
+
+    <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 
 <body>
 
+    <!-- HEADER (logo + nav) -->
     <header class="header-grid">
         <img src="images/logo.png" alt="Rafting Logo" class="logo">
 
         <nav class="top-nav">
             <a href="index.html">Home</a>
-            <a href="about.html">About</a>
+            <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
+    <!-- HERO (moved OUTSIDE main so main has exactly two sections) -->
+    <section class="hero">
+        <img src="images/hero.jpg" alt="Rafting Adventure">
+        <h1>About Whitewater Rafting Co.</h1>
+
+        <article>
+            <img src="images/happy-client.jpg" alt="Happy Client">
+            <p>
+                We create unforgettable whitewater rafting experiences with professional guides,
+                top-tier equipment, and breathtaking river routes. Adventure is what we do best.
+            </p>
+        </article>
+    </section>
+
+    <!-- MAIN must contain exactly two sections -->
     <main>
 
-        <!-- HERO SECTION -->
-        <div class="hero">
-            <img src="images/hero.jpg" alt="Rafting Adventure">
-
-            <h1>About Whitewater Rafting Co.</h1>
-
-            <article>
-                <img src="images/happy-client.jpg" alt="Happy Client">
-                <p>
-                    We create unforgettable whitewater rafting experiences with professional guides,
-                    top-tier equipment, and breathtaking river routes. Adventure is what we do best.
-                </p>
-            </article>
-        </div>
-
-
-
-        <!-- HISTORY SECTION -->
+        <!-- 1) HISTORY SECTION: h2 "History" and a p -->
         <section class="history">
             <h2>History</h2>
-
             <div class="history-layout">
                 <p>
                     Established over 20 years ago, Whitewater Rafting Co. has safely guided thousands of guests
@@ -55,14 +61,11 @@
             </div>
         </section>
 
-
-
-        <!-- ADVENTURES SECTION -->
+        <!-- 2) ADVENTURES SECTION: h2 must be "Adventure Awaits You!" -->
         <section class="adventures">
-            <h2>Adventure Awaits You</h2>
+            <h2>Adventure Awaits You!</h2>
 
             <div class="adventure-grid">
-
                 <figure>
                     <img src="images/adventure1.jpg" alt="Los Dientes del Diablo">
                     <figcaption>Los Dientes del Diablo</figcaption>
@@ -87,23 +90,26 @@
                     <img src="images/adventure5.jpg" alt="Thunder Falls">
                     <figcaption>Thunder Falls</figcaption>
                 </figure>
-
             </div>
         </section>
 
     </main>
 
-
-
-    <!-- FOOTER -->
+    <!-- FOOTER: must include a nav.socialmedia with exactly 3 <a><img></a> -->
     <footer>
-        <p>©2025 Whitewater Rafting Co. | Created by Ifeoluwa</p>
+        <p>©2025 Whitewater Rafting Co. | Created by Ifeoluwa Olalekan</p>
 
-        <div class="social-right">
-            <a href="#"><img src="images/facebook.png" class="socialmedia" alt="Facebook"></a>
-            <a href="#"><img src="images/linkedin.png" class="socialmedia" alt="linkedin"></a>
-            <a href="#"><img src="images/instagram.png" class="socialmedia" alt="Instagram"></a>
-        </div>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" aria-label="Facebook">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://linkedin.com" aria-label="LinkedIn">
+                <img src="images/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://instagram.com" aria-label="Instagram">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+        </nav>
     </footer>
 
 </body>

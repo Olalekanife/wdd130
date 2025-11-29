@@ -1,0 +1,107 @@
+/* 1. Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 2rem;
+}
+
+/* 3. Header */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    color: #1f3c88;
+}
+
+/* 4. Form Styles */
+form {
+    display: grid;
+    gap: 1.5rem;
+    width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+/* 5. Form-item Container */
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+/* 6. Column2: Full name / Email */
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* 7. Column1: Browser / Checkbox */
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* 8. Label Styling */
+label {
+    text-align: right;
+    padding-right: 0.5rem;
+    font-weight: bold;
+}
+
+/* 9. Input, Select, Textarea */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* 10. Checkbox Styling */
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+/* 11. Button Styling */
+button {
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #1f3c88;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #16306b;
+}
+
+/* 12. Footer */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #555;
+}

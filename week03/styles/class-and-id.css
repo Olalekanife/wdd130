@@ -1,7 +1,15 @@
+/* REQUIRED UNIVERSAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* YOUR ORIGINAL CSS BELOW */
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
     padding: 0 40px;
 }
 
@@ -9,8 +17,6 @@ h1 {
     border-bottom: 1px solid rgb(0 110 182);
     padding-bottom: 0;
 }
-
-
 
 p {
     margin: 0;
@@ -28,7 +34,7 @@ code {
     margin: 20px 0;
     border: 1px solid rgb(0 0 0 / 10%);
     padding: 10px;
-    background-color: #ddd; /* this is shorthand for #dddddd */
+    background-color: #ddd;
 }
 
 .highlight {
@@ -53,6 +59,5 @@ code {
     background: linear-gradient(135deg, #000 0%, #999 100%);
     color: white;
     border-radius: 20px;
-    padding: 20px
+    padding: 20px;
 }
-

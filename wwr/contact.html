@@ -45,54 +45,58 @@
         <section class="employees">
             <h2>Meet Our Team</h2>
             <img src="employees.jpg" alt="Rafting Adventures Staff Members Standing Together">
-        </section>
 
-        <!-- Contact Form Section -->
-        <section class="contact-form">
-            <h2>Send Us a Message</h2>
-            <form>
-                <div class="form-item">
-                    <label for="name">Your Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
+            <section class="employees">
+                <h3>Rafting Boat</h3>
+                <img src="rafting-boats.jpg" alt="Colorful Rafting Boats Docked by the River">
+            </section>
 
-                <div class="form-item">
-                    <label for="email">Your Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <fieldset>
-                    <legend>Purpose of Your Message:</legend>
+            <!-- Contact Form Section -->
+            <section class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form>
                     <div class="form-item">
-                        <input type="radio" id="general" name="purpose" value="general" required>
-                        <label for="general">General Inquiry</label>
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
+
                     <div class="form-item">
-                        <input type="radio" id="reservation" name="purpose" value="reservation">
-                        <label for="reservation">Reservation Question</label>
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
+
+                    <fieldset>
+                        <legend>Purpose of Your Message:</legend>
+                        <div class="form-item">
+                            <input type="radio" id="general" name="purpose" value="general" required>
+                            <label for="general">General Inquiry</label>
+                        </div>
+                        <div class="form-item">
+                            <input type="radio" id="reservation" name="purpose" value="reservation">
+                            <label for="reservation">Reservation Question</label>
+                        </div>
+                        <div class="form-item">
+                            <input type="radio" id="website" name="purpose" value="website">
+                            <label for="website">Website Suggestion</label>
+                        </div>
+                    </fieldset>
+
                     <div class="form-item">
-                        <input type="radio" id="website" name="purpose" value="website">
-                        <label for="website">Website Suggestion</label>
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Type your message here..."
+                            required></textarea>
                     </div>
-                </fieldset>
 
-                <div class="form-item">
-                    <label for="message">Your Message:</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Type your message here..."
-                        required></textarea>
-                </div>
+                    <div class="form-item">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                    </div>
 
-                <div class="form-item">
-                    <input type="checkbox" id="subscribe" name="subscribe">
-                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
-                </div>
-
-                <div class="form-item">
-                    <button type="submit">Send Message</button>
-                </div>
-            </form>
-        </section>
+                    <div class="form-item">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </section>
 
     </main>
 
